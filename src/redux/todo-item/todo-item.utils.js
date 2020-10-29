@@ -1,0 +1,1 @@
+export const removeItemFromList = (allItems, itemToRemove) => allItems.filter(item => item!=itemToRemove)
