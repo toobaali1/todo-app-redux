@@ -1,5 +1,6 @@
 import {ActionTypes} from "./todo-item.types";
 import {removeItemFromList} from "./todo-item.utils";
+
 const INITIAL_STATE = {
     todoItems: []
 }

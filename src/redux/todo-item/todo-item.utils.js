@@ -1,1 +1,1 @@
-export const removeItemFromList = (allItems, itemToRemove) => allItems.filter(item => item!=itemToRemove)
+export const removeItemFromList = (allItems, itemToRemove) => allItems.filter(item => item.itemId!=itemToRemove)

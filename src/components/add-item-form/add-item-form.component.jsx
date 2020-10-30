@@ -1,4 +1,5 @@
 import React from "react";
+import "./add-item-form.styles.css"
 import {connect} from "react-redux";
 import {addItem} from "../../redux/todo-item/todo-item.actions"
 
@@ -6,14 +7,16 @@ const AddItemForm = ({dispatch}) =>{
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        dispatch(addItem(e.target.itemToAdd.value))
+        const {itemToAdd} = e.target;
+        dispatch(addItem(itemToAdd.value));
+        itemToAdd.value = "";
     }
 
     return(
-        <div>
+        <div className="add-item-form">
              <form onSubmit={handleSubmit}>
-                <input type="text" name="itemToAdd"/>
-                <button type="submit">ADD</button>
+                <input type="text" placeholder="Add Item" name="itemToAdd" required/>
+                <button type="submit">+</button>
             </form>
         </div>
     )

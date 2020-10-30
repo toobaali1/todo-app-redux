@@ -12,9 +12,9 @@ const ToDoList = ({todoItems}) => {
     return(
         <div className="todo-list">
             <h1>TO DO LIST</h1>
-            {todoItems.map((item)=> <ToDoItem item={item} />)}
+            {todoItems.map((item)=> <ToDoItem key={item.itemId} item={item} />)}
 
-            <AddItemForm />
+           <AddItemForm />
         </div>
     );
 }

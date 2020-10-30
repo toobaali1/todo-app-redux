@@ -1,11 +1,16 @@
 import {ActionTypes} from "./todo-item.types";
 
-export const addItem = (item) => ({
-    type: ActionTypes.ADD_ITEM,
-    payload: item
-})
+let nextId = 0;
 
-export const removeItem = (item) => ({
+export const addItem = (itemName) => ({
+    type: ActionTypes.ADD_ITEM,
+    payload: {
+        itemId: nextId++,
+        itemName
+    }
+});
+
+export const removeItem = (itemId) => ({
     type: ActionTypes.REMOVE_ITEM,
-    payload: item
-})
+    payload: itemId
+});

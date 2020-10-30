@@ -1,5 +1,27 @@
 .todo-item {
-	margin-bottom: 5%;
-	border: 1px solid black;
-	width: 20%;
+	margin-bottom: 20px;
+	font-size: 20px;
+	background-color: #cfd8dc;
+	width: 56%;
+	height: 28%;
+	border-radius: 100px/50px;
+}
+.todo-item p {
+	display: inline-block;
+	padding: 0 20px;
+	color: #212121;
+}
+
+.todo-item button {
+	background-color: #212121;
+	color: white;
+	border-radius: 100%;
+	cursor: pointer;
+	font-size: 22px;
+	border: 0px;
+}
+
+.todo-item button:hover {
+	background-color: #757575;
+	color: #212121;
 }

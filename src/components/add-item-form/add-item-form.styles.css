@@ -1,0 +1,36 @@
+.add-item-form {
+	position: relative;
+	top: 60px;
+	background-color: white;
+}
+
+input {
+	border: none;
+	color: #455a64;
+	font-size: 15px;
+	padding: 10px;
+	margin-right: 5px;
+}
+
+::placeholder {
+	margin-left: 20px;
+}
+
+input:focus {
+	outline: none;
+}
+
+button {
+	background-color: #cfd8dc;
+	color: #212121;
+	border-radius: 100%;
+	cursor: pointer;
+	font-size: 30px;
+	border: 0px;
+	margin: 10px;
+}
+
+button:hover {
+	background-color: #757575;
+	color: #cfd8dc;
+}

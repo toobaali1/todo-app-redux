@@ -6,14 +6,14 @@ import {connect} from "react-redux";
 const ToDoItem = ({item, removeItem}) => {
     return(
         <div className="todo-item">
-            <p>{item}</p>
-            <button onClick={()=> removeItem(item)}>Remove Item</button>
+            <p>{item.itemName}</p>
+            <button onClick={()=> removeItem(item.itemId)}>&#10004;</button>
         </div>
     )
 }
 
 const mapDispatchToProps = dispatch =>({
-    removeItem: item => dispatch(removeItem(item))
+    removeItem: itemId => dispatch(removeItem(itemId))
 })
 
 export default connect(null,mapDispatchToProps)(ToDoItem);
